@@ -1,0 +1,38 @@
+---
+ - name: My Super Puper Plabook for Variables Lesson
+   hosts: all
+   become: yes
+
+   vars:
+     message1: Privet
+     message2: World
+     secret  : ddgdfgdfgdfgdgdg
+
+   tasks:
+   
+   - name: Print Secret variable
+     debug:
+       var: secret
+
+   - name: Debag
+     debug:
+       msg: "Secretnoe slovo: {{ secret }}"
+
+   - name: Debag2
+     debug:
+       msg: "Vladelec Servera ==> {{ owner }}"
+#Peremennaya for message
+   - set_fact: full_message="{{ message1 }} {{ message2 }} from {{ owner }}"
+
+   - name: Debag3
+     debug: 
+       var: full_message
+
+   - debug:
+       var: ansible_distribution
+   
+   - shell: uptime
+     register: results
+    
+   - debug:
+       var: results.stdout

@@ -1,0 +1,20 @@
+---
+ - name: My Super Playbook
+   hosts: all 
+   become: yes
+
+   vars:
+     mytext: "Hello, from Vlady"
+     
+   tasks:
+   - name: Ping test
+     ping:
+
+   - name: Create Folders
+     include: create_folders.yml
+
+   - name: Create Files
+     include: create_files.yml mytext="Hello from Greate Britain"
+
+   - name: Deleet Folders
+     include: remove_includes.yml 

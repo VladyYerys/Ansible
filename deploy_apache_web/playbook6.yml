@@ -1,0 +1,10 @@
+---
+ - name: Install Apache and Uploud my Web Page
+   hosts: "{{ MYHOSTS }}"
+   become: yes
+   
+
+   roles:
+     - deploy_apache_web
+      # - sdffsf
+      # - sdfsdfsdf
