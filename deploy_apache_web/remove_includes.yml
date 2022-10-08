@@ -1,0 +1,15 @@
+---
+ - block:   # ======== Remove all created directories, folders============
+     - name: Reamove folder1
+       file:
+         path: /home/secret
+         state: absent
+     
+     - name: Reamove folder2
+       file:
+          path: /home/secret
+          state: absent
+     
+
+
+

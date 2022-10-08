@@ -1,0 +1,8 @@
+[STAGING_SERVERS_WEB]
+linuxX ansible_host=18.134.137.228     owner=Vasya
+linux1 ansible_host=13.40.10.205       owner=Petya
+linux2 ansible_host=13.40.62.28        owner=Nikolay
+ 
+[PROG_SERVERS_WEB]
+Ubuntu ansible_host=3.11.13.39         owner=VladyYerys
+
