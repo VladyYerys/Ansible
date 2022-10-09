@@ -1,0 +1,2 @@
+[webservers]
+Nubuntu ansible_host=18.168.204.131

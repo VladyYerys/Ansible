@@ -1,0 +1,28 @@
+---
+- name: Configure webserver with nginx
+  hosts: all
+  become: True
+
+  tasks:
+    - name: install nginx
+      apt: name=nginx state=latest
+
+#    - name: copy nginx config file
+#      copy: src=/home/ubuntu/ansible/files/nginx.conf dest=/etc/nginx/sites-available/default
+
+#    - name: enable configuration
+#      file: >
+#        dest=/etc/nginx/sites-enabled/default
+#        src=/etc/nginx/sites-available/default
+#        state=link
+
+    - name: copy index.html
+      template: src=/var/www/html/index.nginx-debian.html dest=/usr/share/nginx/html/index.html mode=0644
+      notify: restart nginx
+
+#    - name: restart nginx
+#      service: name=nginx state=restarted
+
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
