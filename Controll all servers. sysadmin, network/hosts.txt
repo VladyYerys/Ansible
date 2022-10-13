@@ -1,0 +1,5 @@
+[network]
+network ansible_host=13.40.137.207
+
+[sysadmin]
+sysadmin ansible_host=13.40.171.253
