@@ -1,5 +1,5 @@
 # Deploying Ansible
-![alt text] (https://github.com/VladyYerys/Ansible/blob/main/Deploying%20Ansible/Lab%20%230%20Deploying%20Ansible/Screenshot_1.png?raw=true)
+![alt text] (https://github.com/VladyYerys/Ansible/blob/main/Ansible/Deploying Ansible/Lab #0 Deploying Ansible/Screenshot_1.png?raw=true)
 
 You have been tasked with putting together a presentation to demonstrate how Ansible may be used to install software on remote hosts automatically. Before the demo, you will need to configure your test systems. You have been provided two hosts called control and workstation. You will need to configure the ansible user on workstation to have sudo access without a password to the automated software installed via Ansible. You must also configure the control host as your Ansible control server by installing Ansible on it as well as configuring the Ansible user with a pre-shared key to login to the workstation host as the ansible user.
 
