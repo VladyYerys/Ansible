@@ -1,5 +1,5 @@
 # Ad-Hoc Ansible Commands
-![alt text]
+![Lab3](https://user-images.githubusercontent.com/106797604/196339352-5ce4da8e-8b3f-4da7-9c93-b6d9c808d9b5.png)
 
 Some consultants have been employed to perform audits on a number of systems in your company's environment. You must create the user accounts noted in /home/ansible/userlist.txt and set up the provided public keys for their accounts. The security team has built a jump host for the consultants to access production systems and provided the full key-pair to you so you may set up and test the connection. All hosts in dbsystems will need the provided public key installed so the consultants may use key-pair authentication to access the systems. Also, you must ensure the auditd service is enabled and running on all systems.
 
